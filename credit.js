@@ -1,17 +1,5 @@
 const cr = "©Copyright 2023  <img src='https://i.im.ge/2022/12/18/dnNRqa.2564-01-03-094436.png' width='25' height='25' alt='AllaboutITAppScript'> Teerapong Promwang"
-
-/** start**/
-  $(document ).ready(async function() {
-      document.getElementById('message').innerHTML= cr;
-      document.getElementById('message').className = 'msgBg';
-      document.getElementById('loader').style.display = "none";
-      //const location =  await getlocation();
-      //console.log(location)
-      //init(location)
-  });
-
-window.addEventListener('load', () => {
-    let text = document.getElementById("text").innerHTML = `<div id="loader">
+const text = document.getElementById("text").innerHTML = `<div id="loader">
     <div class="overlay">
       <div class="overlay__inner">
         <div class="overlay__content">
@@ -20,4 +8,12 @@ window.addEventListener('load', () => {
       </div>
     </div>
   </div>`;
+/** start**/
+  $(document ).ready(async function() {
+      document.getElementById('message').innerHTML= cr;
+      document.getElementById('message').className = 'msgBg';
+      document.getElementById('loader').style.display = "none";
+      //const location =  await getlocation();
+      //console.log(location)
+      //init(location)
   });
