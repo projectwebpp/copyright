@@ -13,7 +13,11 @@ const text = document.getElementById("text").innerHTML = `<div id="loader">
       document.getElementById('message').innerHTML= cr;
       document.getElementById('message').className = 'msgBg';
       document.getElementById('loader').style.display = "none";
-      //const location =  await getlocation();
+      const hidetext =  await runtext();
       //console.log(location)
       //init(location)
   });
+
+function runtext(){
+const textshow = document.getElementById("text").style.display = "none";
+}
